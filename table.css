@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #112B3C;
+    --secondary-color: #34495e;
+    --four:#95a5a6;
+    --orange2:#E04D01;
+    --black: #000000;
+    --white: #EFEFEF;
+    --gray: #ecf0f1;
+    --gray-2: #bdc3c7;
+
+    --facebook-color: #4267B2;
+    --google-color: #DB4437;
+    --twitter-color: #1DA1F2;
+    --insta-color: #E1306C;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.topnav {
+    overflow: hidden;
+    background-color: var(--primary-color);
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    background-color: var(--secondary-color);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--primary-color);
+  }
+  .p0{
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: 700;
+      padding: 10px 0px 20px;
+  }
+  @media only screen and (max-width: 700px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+        .forward ,
+        .aganist
+        {
+            display: none;
+        }
+        .p0{
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            padding: 10px 0px 20px;
+        }
+      
+  }
+
