@@ -192,7 +192,7 @@ body{
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     .topnav a {
       float: none;
       width: 100%;
@@ -221,4 +221,3 @@ body{
         text-align: center;
     }
 }
-
