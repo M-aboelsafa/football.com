@@ -184,7 +184,7 @@ body{
 {
 	background: var(--insta-color);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
 .sign{
     float: right !important;
 }
