@@ -1,7 +1,7 @@
 :root {
   --primary-color: #16a085;
   --secondary-color: #1abc9c;
-  --four:#95a5a6 ;
+  --four:#112B3C  ;
   --orange2:#E04D01;
   --black: #2c3e50    ;
   --white: #ecf0f1;
@@ -16,208 +16,319 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-*{
-	padding: 0;
-	margin: 0;
+
+* {
+  box-sizing: border-box;
 }
-body{
-  background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg) no-repeat center fixed;
-  background-size: cover;
+
+body {
+  margin: 0px ;
+  padding: 0px;
+  background: #f1f1f1;
+  font-family: Verdana, sans-serif;
 }
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: var(--white);
+  max-width: 1000px;
+  max-height: 800px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.header img{
+  width: auto;
+}
+.mySlides img{
+  width: auto;
+  max-height: 500px;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
 .topnav {
-    overflow: hidden;
-    background-color: var(--primary-color);
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: var(--white);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: var(--secondary-color);
-  }
-.container{
-	background: var(--primary-color);
-	width: 350px;
-	height: 500px;
-	padding-bottom: 20px;
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin: auto;
-  padding: 100px 50px 0px 50px;
-  margin-top: 20px;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 
-.fl{
-	float: left;
-  width: 110px;
-  line-height: 35px;
+/* Change color on hover */
+.topnav a:hover {
+  background-color: var(--secondary-color);
 }
 
-.fontLabel{
-  color: white;
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
 }
 
-.fr{
-	float: right;
-}
-
-.clr{
-	clear: both;
-}
-
-.box{
-	width: 360px;
-	height: 35px;
-	margin-top: 10px;
-	font-family: verdana;
-	font-size: 12px;
-}
-
-.textBox{
-	height: 35px;
-	width: 190px;
-	border: none;
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: var(--white);
   padding-left: 20px;
 }
 
-.new{
-  float: left;
-}
+/* Fake image */
+.fakeimg {
+  background-color: var(--white);
+  width: 100%;
+  padding:  auto ;
+  max-height:600px;
+  overflow: hidden;
 
-.iconBox{
-	height: 35px;
-	width: 40px;
-	line-height: 38px;
-	text-align: center;
-  background: var(--four);
 }
-
-.radio{
-	color: white;
-	background:var(--primary-color);
-	line-height: 38px;
-}
-
-.terms{
-	line-height: 35px;
-	text-align: center;
-	background: var(--primary-color);
-	color: white;
-}
-
-.submit{
-	float: right;
-	border: none;
-	color: white;
-	width: 110px;
-	height: 35px;
-	background: var(--four);
-	text-transform: uppercase;
-  cursor: pointer;
-}
-.submit:hover
-{
-    background-color: var(--secondary-color);
-}
-.box
-{
-    background-color: var(--primary-color);
-}
-.social-container {
-	position: absolute;
-	top:10%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin: auto;
-    z-index: 5;
-}
-
-.social-container span {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0px 3px;
-	height: 40px;
-	width: 40px;
+.social-container a {
+border: 1px solid #DDDDDD;
+border-radius: 50%;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+margin: 0px 3px;
+height: 40px;
+width: 40px;
+  text-decoration: none  ;
 }
 .social-face
 {
-    font-size: 1.3em;
-	text-align: center;
-	color: white;
+  font-size: 1.3em;
+text-align: center;
+color: var(--facebook-color);
+
 }
 .social-face:hover{
-
-	background: var(--facebook-color);
+color: white;
+background: var(--facebook-color);
 }
 .social-go
 {
-    font-size: 1.3em;
-	text-align: center;
-	color: white;
+  font-size: 1.3em;
+text-align: center;
+color: var(--google-color);
 }
 .social-go:hover{
-	background: var(--google-color);
+background: var(--google-color);
+color: white;
 }
 
 .social-ig
 {
-    font-size: 1.3em;
-	text-align: center;
-	color: white;
+  font-size: 1.6em;
+text-align: center;
+color: var(--insta-color);
 }
+
 .social-ig:hover
 {
-	background: var(--insta-color);
+background: var(--insta-color);
+color: white;
 }
-@media screen and (min-width: 700px) {
-.sign{
-    float: right !important;
+.social-twitter
+{
+  font-size: 1.3em;
+text-align: center;
+color: var(--twitter-color);
 }
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
+.social-twitter:hover
+{
+background: var(--twitter-color);
+color: white;
 }
+.social-linkedin
+{
+  font-size: 1.3em;
+text-align: center;
+color: var(--linkedin);
+}
+
+.social-linkedin:hover
+{
+background: var(--linkedin);
+color: white;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.mySlides {
+  display: none;
+  height: 600px;
+}
+img {
+      vertical-align: middle;
+      
+  }
+
+/* Slideshow container */
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 2px 2px;
+  position: relative;
+  bottom: 90px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*.topnav a+a::before{
+  content: "/\00a0";
+  color: black;
+}
+*/
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 985px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .header {
+      padding: 10px;
+      text-align: center;
+      background: var(--white);
+      max-width: 600px;
+      max-height: 500px;
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 14px;
+      padding: 3px 5px;
+      position: absolute;
+      bottom: 50px;
+      width: 95%;
+      margin: 0 2.5%;
+      text-align: center;
+    }
+}
+footer .link
+{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+footer .link:hover
+{
+    color: var(--secondary-color);
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-    .topnav a {
-      float: none;
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  .header {
+      padding: 0px;
+      padding-top: 3px;
+      text-align: center;
+      background: var(--white);
+      max-width: 600px;
+      max-height: 700px;
+      position: relative;
+      margin: auto;
+    }  
+    .header .mySlides  img{
+      object-fit: scale-down;;
+    }
+    .text {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 3px 5px;
+      position: absolute;
+      bottom: 35px;
+      width: 95%;
+      margin: 0 2.5%;
+      text-align: center;
+    }
+    .fakeimg {
+      background-color: var(--white);
       width: 100%;
+      padding: auto ;
+      max-height:300px;
+      overflow: hidden;
     }
-    .container{
-        background: var(--primary-color);
-        width: 370px;
-        height: 450px;
-        padding-bottom: 20px;
-        position: absolute;
-        top:600px;
-        left: 50%;  
-        transform: translate(-50%, -50%);
-        margin: auto;
-      padding: 70px 10px 20px 10px;
-    }
-    .social-container {
-        position: absolute;
-        top:10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-        z-index: 5;
-    }
-    .sign{
-        text-align: center;
-    }
-}
+  
+  
+  }
