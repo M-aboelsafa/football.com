@@ -137,7 +137,7 @@ body{
 }
 .social-container {
 	position: absolute;
-	top:25%;
+	top:10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin: auto;
@@ -203,7 +203,7 @@ body{
         height: 450px;
         padding-bottom: 20px;
         position: absolute;
-        top:610px;
+        top:600px;
         left: 50%;  
         transform: translate(-50%, -50%);
         margin: auto;
@@ -211,7 +211,7 @@ body{
     }
     .social-container {
         position: absolute;
-        top:90%;
+        top:10%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: auto;
