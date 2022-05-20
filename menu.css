@@ -1,18 +1,20 @@
 :root {
-    --primary-color: #112B3C;
-    --secondary-color: #34495e;
-    --four:#95a5a6;
-    --orange2:#E04D01;
-    --black: #000000;
-    --white: #EFEFEF;
-    --gray: #ecf0f1;
-    --gray-2: #bdc3c7;
-    --close:#c0392b;
-    --facebook-color: #4267B2;
-    --google-color: #DB4437;
-    --twitter-color: #1DA1F2;
-    --insta-color: #E1306C;
+  --primary-color: #16a085;
+  --secondary-color: #1abc9c;
+  --four:#95a5a6 ;
+  --orange2:#E04D01;
+  --black: #2c3e50    ;
+  --white: #ecf0f1;
+  --gray: #efefef;
+  --gray-2: #757575;
+
+  --facebook-color: #4267B2;
+  --google-color: #DB4437;
+  --twitter-color: #1DA1F2;
+  --insta-color: #E1306C;
+  --linkedin: #0072b1;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
