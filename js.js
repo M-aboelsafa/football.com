@@ -8,17 +8,16 @@ var phone = document.getElementById("phone");
 var accept = 1;
 var p=1;
 
-console.log(sub);
-console.log(fname);
-console.log(lname);
-console.log(address);
-console.log(pass);
-console.log(mail);
-console.log(phone);
+
 
 sub.addEventListener("click", function(event){
     var ph = phone.value;
-      if (isNaN(ph))
+    
+    function checkph(str) {
+      return /^01(0|1|2|5)\d{8}$/.test(str);
+    }  
+    
+    if (isNaN(ph) || !checkph(ph))
       {
           accept=0;
           phone.className = "ac";
@@ -26,13 +25,22 @@ sub.addEventListener("click", function(event){
         }else{
             phone.className = "textBox";
         }
+    var ail=mail.value;
+    function checker(str) {
+      return /^\w+(.\w+)?@\w+[.](com|org|edu|net)/i.test(str);
+    } 
+    if(!checker(ail))
+    {
+      accept=0;
+      mail.className = "ac";
+      myFunction2();
+    }else{
+        mail.className = "textBox";
+    }
 
-    console.log(address.value);
-    console.log(mail.value);
-
-    function onlyCap(str) {
-        return /^[A-Z]+$/.test(str);
-      }
+       function onlyCap(str) {
+      return /^[A-Z]+$/.test(str);
+    }
       function containNum(str) {
         return /[0-9]/.test(str);
       }
@@ -75,12 +83,12 @@ sub.addEventListener("click", function(event){
       else{
           pass.className= "textBox";
       }
-      
-      console.log(accept);
-    console.log(chars[0]);
-    if(accept === 0 )
+        if(accept === 0 )
    {
         event.preventDefault();
+   }
+   else{
+     event.href="index.html";
    }
    accept = 1;
    p=1;
@@ -89,8 +97,6 @@ sub.addEventListener("click", function(event){
   function myFunction(str) {
     var popup = document.getElementById("myPopup1");
     popup.className="show";
-    console.log(str);
-    console.log(popup);
     popup.innerHTML=str;
     setTimeout(back, 2000);
   }  function myFunction1() {
@@ -107,6 +113,14 @@ sub.addEventListener("click", function(event){
   {
       var popup = document.getElementById("myPopup2");
       popup.className="popuptext";
-    
   }
-    
+  function myFunction2() {
+    var popup = document.getElementById("myPopup3");
+    popup.className="show";
+    setTimeout(back3, 2000);
+  }
+  function back3()
+  {
+      var popup = document.getElementById("myPopup3");
+      popup.className="popuptext";
+  }
