@@ -293,5 +293,8 @@ body{
   label{
     padding-left: 10px;
   }
+	  .submit{
+    margin-right: 10px;
+  }
 }
 
