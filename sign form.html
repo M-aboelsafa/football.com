@@ -29,7 +29,7 @@
               <span class="social-go"><i class="fab fa-google-plus-g"></i></span>
               <span class="social-ig"><i class="fa fa-instagram"></i></span>
        </div>
-    <form method="post" autocomplete="on" form action="index.html">
+    <form method="post" autocomplete="on" form action="index.html" onsubmit="myFunction()">
       <!--First name-->
           <div class="box">
       <label for="firstName" class="fl fontLabel"> First Name: </label>
@@ -57,9 +57,9 @@
   <label for="phone" class="fl fontLabel"> Phone No.: </label>
         <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
         <div class="fr">
-                  <input type="text" required name="phoneNo" maxlength="11" minlength="3" placeholder="Phone No." class="textBox" id="phone">
+                  <input type="text" required name="phoneNo" maxlength="11" minlength="11" placeholder="Phone No." class="textBox" id="phone">
           </div>
-          <span class="popuptext" id="myPopup2">phone number must be digits only</span>
+          <span class="popuptext" id="myPopup2">incorrect phone number</span>
         </div>
       <!---Phone No.---->
       <div class="box">
@@ -77,7 +77,7 @@
           <div class="fr">
                   <input type="email" required name="email" placeholder="Email Id" class="textBox" id="mail">
           </div>
-          <div class="clr"></div>
+          <span class="popuptext" id="myPopup3">incorrect mail</span>
       </div>
       <!--Email ID----->
 
