@@ -1,3 +1,4 @@
+
 :root {
   --primary-color: #16a085;
   --secondary-color: #1abc9c;
@@ -58,7 +59,10 @@
   }
   
   .price .header {
-    background-color: #111;
+   /* background-color: #111;
+    */
+    background-image: url(backb.png);
+    background-size: 150px 80px; 
     color: white;
     font-size: 25px;
   }
@@ -142,6 +146,7 @@
   }
  .price #sp
   {
+    background-image: none;
     background-color:var(--secondary-color);
   }
   #p1
@@ -160,6 +165,25 @@
     background-color: var(--primary-color);
     color: var(--white);
 }
+footer .link
+{
+    text-decoration: none;
+    color: #16a085;
+}
+footer .link:hover
+{
+    color: #1abc9c;
+}
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+    }
+    .fadyy{
+    height: 480px;
+    }
   @media screen and (max-width: 1200px) {
     .column{
     float: left;
@@ -196,10 +220,14 @@
 
 
 
+
   @media only screen and (max-width: 700px) {
     .columns {
       width: 100%;
     }
+    .fadyy{
+      height: 1320px;
+      }
         .topnav a {
           float: none;
           width: 100%;
@@ -221,10 +249,10 @@
              width: 30%;
              background: var(--primary-color);
          }
-         
+
   }
   @media only screen and (max-width: 240px) {
     .what:after
     { display: none;
    }
-}
+}    
